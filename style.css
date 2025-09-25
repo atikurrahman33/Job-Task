@@ -436,6 +436,72 @@ details[open] summary::after {
     margin-right: 10px;
 }
 
+/* Backed by Science */
+
+.science-section {
+    background: #4f2600;
+    color: #fff;
+    padding: 60px 20px;
+    margin-top: 10px;
+}
+
+.science-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.science-text {
+    flex: 1 1 45%;
+}
+
+.science-text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.science-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.science-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.science-text ul li {
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.science-text ul li::before {
+    content: "●";
+    color: #ff6600;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.science-image {
+    flex: 1 1 45%;
+    text-align: center;
+}
+
+.science-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
 /* Pricing Section */
 
 .section-heading {
@@ -446,7 +512,36 @@ details[open] summary::after {
     color: #ff6600;
 }
 
-/* Pricing Section */
+
+.separator-section {
+    background: #6B2B00;
+    width: 80%;
+    padding: 30px 20px;
+    text-align: center;
+    margin: 0 auto 40px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.separator {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.separator-button {
+    background: #ff6600;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
 .pricing-section {
     padding: 60px 20px;
     background: #f9f9f9;
@@ -457,7 +552,7 @@ details[open] summary::after {
     padding: 15px;
     border-radius: 12px 12px 0 0;
     transition: background-color 0.3s;
-    /* smooth color transition */
+
 }
 
 .pricing-container {
@@ -705,6 +800,12 @@ footer {
 
     .social-icons i {
         margin-right: 15px;
+    }
+
+    .separator-section {
+        width: 95%;
+        /* almost full width on mobile */
+        padding: 20px 15px;
     }
 }
 
