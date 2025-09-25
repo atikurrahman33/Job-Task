@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #fff;
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    border-bottom: 1px solid #eee;
+}
+
+nav .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff5722;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff5722;
+}
+
+.contact-btn {
+    background: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    padding: 100px 60px;
+    background: url('/images/Banne.png') no-repeat center center/cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content {
+    position: relative;
+    max-width: 550px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 140px;
+}
+
+.hero-content .customers {
+    display: flex;
+    align-items: center;
+}
+
+.hero-content .customers img {
+    border-radius: 50%;
+    margin-left: -12px;
+    border: 2px solid #fff;
+}
+
+.hero-content .customers img:first-child {
+    margin-left: 0;
+}
+
+.hero-content .customers span {
+    font-size: 14px;
+    background: #fff;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 20px;
+
+}
+
+
+.hero-content h1 {
+    font-size: 42px;
+    font-weight: semibold;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.hero-content .btn {
+    background: #ff5722;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+    width: fit-content;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+}
+
+.hero-content .btn:hover {
+    background: #e64a19;
+}
+
+
+/* Responsive */
+@media(max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    nav {
+        padding: 15px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .text-content {
+        padding-top: 100px;
+    }
+}
