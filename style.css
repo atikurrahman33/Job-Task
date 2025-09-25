@@ -146,6 +146,211 @@ nav ul li a:hover {
     background: #e64a19;
 }
 
+/* Product */
+.product-section {
+    display: flex;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.product-gallery {
+    flex: 1;
+}
+
+.main-image {
+    background: #fdeee5;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 15px;
+    height: 420px;
+}
+
+.main-image img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+}
+
+.thumbnails img {
+    width: 100px;
+    height: 90px;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    object-fit: contain;
+    background: #f5f5f5;
+    padding: 5px;
+    transition: 0.3s;
+
+
+}
+
+.thumbnails {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.thumbnails img.active {
+    background: #6B2B00;
+    border: 2px solid #6B2B00;
+
+}
+
+.thumbnails img:hover {
+    border: 2px solid orange;
+}
+
+
+/* Product Info */
+.product-info {
+    flex: 1;
+}
+
+.rating {
+    color: orange;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #b71c1c;
+    margin: 10px 0;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.discount {
+    background: orange;
+    color: white;
+    font-size: 12px;
+    padding: 3px 6px;
+    border-radius: 4px;
+    margin-left: 6px;
+}
+
+.desc {
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 24px;
+   
+}
+
+.features p {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.features .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+
+.add-to-cart {
+    background: #FF6600;
+    border: none;
+    color: white;
+    padding: 14px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 15px 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+
+.payment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.payment img {
+    flex: 1 1 auto;
+    max-width: 100px;
+    height: 58px;
+    object-fit: contain;
+}
+
+
+.payment img {
+    height: 30px;
+    object-fit: contain;
+}
+
+.img-Design {
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.accordion {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.accordion details {
+    border-bottom: 1px solid #f5d6c6;
+    padding: 12px 0;
+}
+
+.accordion summary {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion summary::after {
+    content: "▾";
+    font-size: 14px;
+    transition: transform 0.2s ease;
+}
+
+details[open] summary::after {
+    transform: rotate(-180deg);
+}
+
+.accordion p {
+    margin: 10px 0 0;
+    font-size: 13px;
+    color: #444;
+}
+
+
 
 /* Responsive */
 @media(max-width: 768px) {
@@ -164,4 +369,57 @@ nav ul li a:hover {
     .text-content {
         padding-top: 100px;
     }
+
+    .product-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .product-gallery,
+    .product-info {
+        width: 100%;
+    }
+
+    .thumbnails {
+        justify-content: center;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+
+    .add-to-cart {
+        max-width: 320px;
+    }
+
+    .thumbnails img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .desc,
+    .features {
+        font-size: 13px;
+    }
+
+    .accordion {
+        max-width: 100%;
+        /* full width on mobile */
+        padding: 0 10px;
+        /* add padding for breathing space */
+    }
+
+    .accordion summary {
+        font-size: 14px;
+    }
+
+    .accordion p {
+        font-size: 12px;
+    }
 }
+

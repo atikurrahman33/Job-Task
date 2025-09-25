@@ -45,7 +45,74 @@
         </div>
     </section>
 
+    <!-- Product -->
+    <section class="product-section">
+        <!-- Left: Image Preview -->
+        <div class="product-gallery">
+            <div class="main-image">
+                <img id="mainProductImage" src="images/p1.png" alt="Product">
+            </div>
+            <div class="thumbnails">
+                <img src="/images/P1.png" alt="thumb1" class="active" onclick="changeImage(this)">
+                <img src="/images/P2.png" alt="thumb2" onclick="changeImage(this)">
+                <img src="/images/P3.png" alt="thumb3" onclick="changeImage(this)">
+                <img src="/images/P4.png" alt="thumb4" onclick="changeImage(this)">
+            </div>
+        </div>
 
+        <!-- Right: Product Info -->
+        <div class="product-info">
+            <div class="rating">
+                ⭐⭐⭐⭐⭐ <span>4.5 (500+ Reviews)</span>
+            </div>
+            <h2>Noseclip</h2>
+            <p class="price">$12.00 <span class="old-price">$20.00</span> <span class="discount">SAVE 10%</span></p>
+
+            <h3>Description:</h3>
+            <p class="desc">
+                A nasal clip is a small device typically used to pinch or secure the nostrils for various purposes,
+                such as during sports, medical treatments, or personal health practices. It is usually made of
+                flexible or padded materials to ensure comfort and a secure fit.
+            </p>
+
+            <div class="features">
+                <p><img src="/images/Frame.png" alt="icon" class="icon"> Optimized Airflow</p>
+                <p><img src="/images/Frame.png" alt="icon" class="icon"> Optimized Airflow</p>
+                <p><img src="/images/Frame.png" alt="icon" class="icon"> Stop snoring</p>
+                <p><img src="/images/Frame.png" alt="icon" class="icon"> 100% Drug Free</p>
+            </div>
+
+
+            <button class="add-to-cart">Add to Cart →</button>
+
+            <div class="payment">
+                <img class="img-Design" src="/images/mini-hero-applepay.png" alt="ApplePay">
+                <img class="img-Design" src="/images/gpay.png" alt="GooglePay">
+                <img class="img-Design" src="/images/Mastercard-Logo.png" alt="MasterCard">
+                <img class="img-Design" src="/images/shopPay.jpeg" alt="ShopPay">
+                <img class="img-Design" src="/images/Visa_Inc.-Logo.wine.png" alt="Visa">
+            </div>
+            <div class="accordion">
+                <details>
+                    <summary>Sizing information</summary>
+                    <p>Here you can add details about sizing...</p>
+                </details>
+
+                <details>
+                    <summary>Free resizing</summary>
+                    <p>Information about free resizing...</p>
+                </details>
+
+                <details>
+                    <summary>Money back guarantee & free returns</summary>
+                    <p>Policy details go here...</p>
+                </details>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
