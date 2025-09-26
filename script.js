@@ -29,3 +29,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             });
         });
+
+        function handleResize() {
+    const container = document.querySelector('[style*="grid-template-columns"]');
+    if (window.innerWidth < 768) {
+      container.style.gridTemplateColumns = "1fr"; 
+    } else {
+      container.style.gridTemplateColumns = "1fr 1fr"; 
+    }
+  }
+  window.addEventListener('resize', handleResize);
+  window.addEventListener('load', handleResize);
